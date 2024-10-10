@@ -1,13 +1,14 @@
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
 :root {
-  --bg-color: #000028;
-  --title-color: #db00ff;
-  --accent-color: #ff0070;
-  --text-color: #f1b2ce;
-  --accent-title-color: #ff0070;
-  --accent-text-color: #000028;
-  --main-font: "IBM Plex mono", sans-serif;
-  --background-image: url(../images/cover-image-dark.png);
-  --border-color: #ff0070;
-  --button-color: #ff0070;
-  --border-color-hover: rgba(255, 0, 112, 0.4);
+  --color-headline: #ffc2e6;
+  --color-primary: #ff8dcb;
+  --color-auto-primary-rgb: 53, 52, 48;
+  --color-secondary: #353430;
+  --background-image: url("../images/cover-image-light.png");
+  --color-headline-shadow: #ff0070;
+  --display-rec: none;
+  --bg-color: #FFF1F8;
 }

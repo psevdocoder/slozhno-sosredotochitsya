@@ -1,35 +1,24 @@
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+:root .theme_light {
+  --color-headline: #ffc2e6;
+  --color-primary: #ff8dcb;
+  --color-secondary: #353430;
+  --background-image: url("../images/cover-image-light.png");
+  --color-headline-shadow: #ff0070;
+  --color-description: #353430;
+  --bg-color: #FFF1F8;
+  --color-auto-primary-rgb: 53, 52, 48;
+  --display-rec: none;
+}
+
 .page.theme_light {
-  --bg-color: #fff1f7;
-  --title-color: #ffc2e6;
-  --accent-color: #ff8dcb;
-  --text-color: #353430;
-  --accent-title-color: #353430;
-  --accent-text-color: #353430;
-  --main-font: "IBM Plex mono", sans-serif;
-  --background-image: url(../images/cover-image-light.png);
-  --border-color: #353430;
-  --button-color: #353430;
-  --border-color-hover: rgba(50, 49, 45, 0.4);
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg-color: #fff1f7;
-    --title-color: #ffc2e6;
-    --accent-color: #ff8dcb;
-    --text-color: #353430;
-    --main-font: "IBM Plex mono", sans-serif;
-    --background-image: url(../images/cover-image-light.png);
-    --border-color: #353430;
-    --button-color: #353430;
-    --border-color-hover: rgba(50, 49, 45, 0.4);
-  }
-}
-
-.page.theme_light .header__decorative-element::before {
-  display: none;
-}
-
-.page.theme_light .header__decorative-element::after {
-  display: none;
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
+  background-image: var(--background-image);
 }
