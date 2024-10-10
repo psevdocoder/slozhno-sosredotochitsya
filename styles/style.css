@@ -367,10 +367,10 @@
 }
 
 .footer {
-  display: flex;
   position: relative;
   block-size: 100vh;
   min-block-size: 648px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
