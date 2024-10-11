@@ -31,6 +31,14 @@ p {
   color: var(--color-description);
 }
 
+/* p + p {
+  margin-top: 16px;
+} */
+
+p:not(:last-child) {
+  margin-bottom: 1em;
+}
+
 .header {
   display: grid;
   position: relative;
